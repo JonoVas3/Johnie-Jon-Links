@@ -4,13 +4,14 @@ import './App.css';
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, Container, Grid, List, ListItem, ListItemIcon, Modal, Typography } from '@mui/material';
 import { useState, createContext } from 'react';
 import { GitHub, Instagram, Twitter } from '@mui/icons-material';
+import Carousel from "./Components/Carousel";
 
-import bg1 from './assets/kb-bg1.jpg'
+import bg1 from './assets/j5-bg1.jpg'
 
-import link1 from './assets/kb-link1.jpg'
-import link2 from './assets/kb-link2.jpg'
-import link3 from './assets/kb-link3.jpg'
-import link4 from './assets/kb-link4.jpg'
+import link1 from './assets/j5-link1.jpg'
+import link2 from './assets/j5-link2.jpg'
+import link3 from './assets/j5-link3.jpg'
+import link4 from './assets/j5-link4.jpg'
 
 
 
@@ -20,17 +21,17 @@ function App() {
         <Container maxWidth={false} sx={{  bgcolor:'#ff6a00', padding:'0 !important', height:'100%' }} >
             <Grid container spacing={0} sx={contentGrid} >
               <Grid item xs={12} sm={12} md={12} lg={3} xl={3} sx={desktopLinks}>
-                <List sx={{listStyle:'none', float:'right', marginTop:'150px'}}>
+                <List sx={{listStyle:'none', float:'right', marginTop:'50px'}}>
                   <ListItem>
                     <Box sx={{width:'300px', margin:'0 auto', textAlign:'center'}}>
-                    <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'900', fontSize:'24px', fontFamily:'Raleway'}}>KitBit Copsplay</Typography>
-                    <Typography sx={{color:'#ff6a00',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Cosplayer</Typography>
+                    <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'900', fontSize:'24px', fontFamily:'Raleway'}}>Johnie 5</Typography>
+                    <Typography sx={{color:'#ef1e1e',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Cosplayer &amp; Entertainer</Typography>
                     </Box>
                   </ListItem>
-                  <a href='https://www.instagram.com/kitbitcosplay/'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link1})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Instagram>instagram.com/kitbitcosplay</Box></ListItem>
-                  </a><a href='https://twitter.com/CosplayKitbit'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link2})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Twitter>twitter.com/CosplayKitbit</Box></ListItem>
+                  <a href='https://www.instagram.com/johnie_5/'>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link1})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Instagram>instagram.com/johnie_5</Box></ListItem>
+                  </a><a href='https://www.facebook.com/johnie.gula'>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link2})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Twitter>facebook.com/johnie.gula</Box></ListItem>
                   </a>
                 |</List>
 
@@ -38,15 +39,15 @@ function App() {
                   <ListItem>
                     <Box sx={{width:'300px', margin:'0 auto', textAlign:'center'}}>
                     <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'900', fontSize:'24px', fontFamily:'Raleway'}}>Jon V Photography</Typography>
-                    <Typography sx={{color:'#ff6a00',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Photographer</Typography>
+                    <Typography sx={{color:'#ef1e1e',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Photographer</Typography>
                     </Box>
                   </ListItem>
                   <a href='https://www.instagram.com/jonv_photography/'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link3})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Instagram>instagram.com/jonv_photography</Box></ListItem>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link3})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Instagram>instagram.com/jonv_photography</Box></ListItem>
                   </a><a href='https://twitter.com/JonVphotos'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link4})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Twitter>twitter.com/JonVphotos</Box></ListItem>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', float:'right', marginRight:'-300px', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link4})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Twitter>twitter.com/JonVphotos</Box></ListItem>
                   </a>
-                  <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'bold', fontSize:'8px', margin:'140px 0 0', paddingBottom:'25px'}}>Site Designed and coded by <Box sx={{color:'#ff6a00', display:'inline'}}>Jon Vasquez</Box></Typography>
+                  <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'bold', fontSize:'8px', margin:'140px 0 0', paddingBottom:'25px'}}>Site Designed and coded by <Box sx={{color:'#ef1e1e', display:'inline'}}>Jon Vasquez</Box></Typography>
                 </List>
               </Grid>
 
@@ -61,14 +62,14 @@ function App() {
                 <List sx={{listStyle:'none', margin:'-150px auto 0'}}>
                   <ListItem>
                     <Box sx={{width:'300px', margin:'0 auto', textAlign:'center'}}>
-                    <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'900', fontSize:'24px', fontFamily:'Raleway'}}>KitBit Copsplay</Typography>
-                    <Typography sx={{color:'#ff6a00',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Cosplayer</Typography>
+                    <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'900', fontSize:'24px', fontFamily:'Raleway'}}>Johnie 5</Typography>
+                    <Typography sx={{color:'#ef1e1e',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Cosplayer &amp; Entertainer</Typography>
                     </Box>
                   </ListItem>
-                  <a href='https://www.instagram.com/kitbitcosplay/'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff',textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link1})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Instagram>instagram.com/kitbitcosplay</Box></ListItem>
-                  </a><a href='https://twitter.com/CosplayKitbit'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link2})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Twitter>twitter.com/CosplayKitbit</Box></ListItem>
+                  <a href='https://www.instagram.com/johnie_5/'>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff',textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link1})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Instagram>instagram.com/johnie_5</Box></ListItem>
+                  </a><a href='https://www.facebook.com/johnie.gula'>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link2})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Twitter>facebook.com/johnie.gula</Box></ListItem>
                   </a>
                 </List>
 
@@ -76,15 +77,15 @@ function App() {
                   <ListItem>
                     <Box sx={{width:'300px', margin:'0 auto', textAlign:'center'}}>
                     <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'900', fontSize:'24px', fontFamily:'Raleway'}}>Jon V Photography</Typography>
-                    <Typography sx={{color:'#ff6a00',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Photographer</Typography>
+                    <Typography sx={{color:'#ef1e1e',textTransform:'uppercase',fontWeight:'900', fontFamily:'Raleway'}}>Photographer</Typography>
                     </Box>
                   </ListItem>
                   <a href='https://www.instagram.com/jonv_photography/'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff',textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link3})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Instagram>instagram.com/jonv_photography</Box></ListItem>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff',textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link3})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Instagram sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Instagram>instagram.com/jonv_photography</Box></ListItem>
                   </a><a href='https://twitter.com/JonVphotos'>
-                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link4})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ff6a00'}}></Twitter>twitter.com/JonVphotos</Box></ListItem>
+                  <ListItem><Box sx={{width:'600px', bgcolor:'#402370', color:'#ffffff', textAlign:'center', padding:'40px 0', borderRadius:'10px', boxShadow:'0px 0px 10px rgba(0,0,0,.5)', backgroundImage: `url(${link4})`, backgroundSize:'cover', fontWeight:'700', fontFamily:'Raleway', fontSize:'24px', margin:'0 auto'}}><Twitter sx={{margin:'10px 20px -5px 0', fontSize: '30px', color:'#ef1e1e'}}></Twitter>twitter.com/JonVphotos</Box></ListItem>
                   </a>
-                  <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'bold', fontSize:'8px', padding:'20px 0'}}>Site Designed and coded by <Box sx={{color:'#ff6a00', display:'inline'}}>Jon Vasquez</Box></Typography>
+                  <Typography sx={{color:'White',textTransform:'uppercase',fontWeight:'bold', fontSize:'8px', padding:'20px 0'}}>Site Designed and coded by <Box sx={{color:'#ef1e1e', display:'inline'}}>Jon Vasquez</Box></Typography>
                 </List>
               </Grid>
 
@@ -107,7 +108,7 @@ const contentGrid = {
 }
 
 const desktopLinks = {
-  backgroundImage: 'linear-gradient(45deg, #0a0118, #2e125c)',
+  backgroundImage: 'linear-gradient(45deg, #000000, #202020)',
   display: {
     xl: 'block',
     lg: 'block',
@@ -133,7 +134,7 @@ const cover = {
 }
 
 const mobileLinks = {
-  backgroundImage: 'linear-gradient(45deg, #0a0118, #2e125c)',
+  backgroundImage: 'linear-gradient(45deg, #000000, #202020)',
   display: {
     xl: 'none',
     lg: 'none',
